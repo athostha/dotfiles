@@ -1,0 +1,27 @@
+/* -- Gray -- */
+
+
+
+* {
+  al:      #00000000;
+  bg:      #1d000e;
+  se:      #aee0ff;
+  fg:      #aee0ff;
+  ac:      #aee0ff;
+  red:     #930000;
+  green:   #495229;
+  yellow:  #e2de51;
+  blue:    #42A5F5ff;
+  purple:  #BA68C8ff;
+  cyan:    #4DD0E1ff;
+}
+* {
+shade1: #000000;
+shade2: #050505;
+shade3: #101010;
+shade4: #151515;
+shade5: #202020;
+shade6: #250012;
+shade7: #040001;
+shade8: #1d000e;
+}

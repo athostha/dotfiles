@@ -1,0 +1,4 @@
+call plug#begin('~/.vim/plugged')
+  Plug 'preservim/nerdtree'
+  Plug 'reedes/vim-pencil'
+call plug#end()
