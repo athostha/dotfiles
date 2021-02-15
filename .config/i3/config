@@ -30,8 +30,8 @@ font pango: DejavuSansMono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Shift+Return exec i3-sensible-terminal
-bindsym $mod+Return exec cool-retro-term
+bindsym $mod+Shift+Return exec cool-retro-term -e ~/.tmuxstart lutador
+bindsym $mod+Return exec cool-retro-term -e ~/.tmuxstart epona
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -178,17 +178,25 @@ bar {
 		}
 }
 
+
+
+
+#chooses desktop image, i3lock will be bound to same image
+exec_always ~/.screen
+
 # my configs
-bindsym $mod+i exec firefox
-bindsym $mod+n exec pcmanfm-qt ~ ~/Documentos/agora /mnt/sdb1 ~/Downloads
-exec_always feh --bg-scale /home/across/Imagens/wallpaper/motoko12.png
+exec --no-startup-id i3-msg 'workspace 1; exec firefox'; 
+exec --no-startup-id i3-msg 'workspace 2; exec cool-retro-term --fullscreen -e ~/.tmuxstart danger';
+exec --no-startup-id i3-msg 'workspace 5; exec spotify';
 exec_always compton
 bindsym $mod+shift+p exec pavucontrol
 bindsym $mod+Shift+d exec xfce4-appfinder
 bindcode 107 exec lximage-qt --screenshot
 bindsym $mod+c exec korganizer
+bindsym $mod+i exec /opt/firefox/firefox
+bindsym $mod+n exec pcmanfm-qt ~ ~/Documentos/agora /mnt/sdb1 ~/Downloads
 bindsym $mod+p exec spotify
-bindsym $mod+o exec i3lock -c "#7F171F"
+bindsym $mod+o exec ~/.i3lock
 
 # bindcode $mod+119 exec systemctl poweroff
 
@@ -207,5 +215,5 @@ bindcode $mod+Shift+86 exec xbacklight -inc 20 # increase screen brightness
 bindcode $mod+Shift+82 exec xbacklight -dec 20 # decrease screen brightness
 
 exec --no-startup-id exec xbindkeys
-
+exec --no-startup-id exec xfce4-clipman
 

@@ -7,7 +7,6 @@ set splitbelow
 set splitright
 
 
-
 filetype plugin indent on
 filetype off
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
@@ -20,7 +19,6 @@ set encoding=utf-8
 set foldmethod=indent
 set foldlevel=99
 
-
 if filereadable(expand("~/.vimrc.plug"))
 source ~/.vimrc.plug
 endif
@@ -32,7 +30,7 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let python_highlight_all=1
 syntax on
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 
 "split navigations
@@ -111,3 +109,4 @@ augroup pencil
   autocmd!
   autocmd FileType fim         call pencil#init()
 augroup END
+
