@@ -185,9 +185,9 @@ bar {
 exec_always ~/.screen
 
 # my configs
-exec --no-startup-id i3-msg 'workspace 1; exec firefox'; 
+
 exec --no-startup-id i3-msg 'workspace 2; exec cool-retro-term --fullscreen -e ~/.tmuxstart danger';
-exec --no-startup-id i3-msg 'workspace 5; exec spotify';
+
 exec_always compton
 bindsym $mod+shift+p exec pavucontrol
 bindsym $mod+Shift+d exec xfce4-appfinder
@@ -196,7 +196,8 @@ bindsym $mod+c exec korganizer
 bindsym $mod+i exec /opt/firefox/firefox
 bindsym $mod+n exec pcmanfm-qt ~ ~/Documentos/agora /mnt/sdb1 ~/Downloads
 bindsym $mod+p exec spotify
-bindsym $mod+o exec ~/.i3lock
+# bindsym $mod+o exec ~/.i3lock
+bindsym $mod+o exec ~/.blockscreen
 
 # bindcode $mod+119 exec systemctl poweroff
 

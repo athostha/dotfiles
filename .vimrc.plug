@@ -1,3 +1,5 @@
 call plug#begin('~/.vim/plugged')
-
+	Plug 'frazrepo/vim-rainbow'
+	Plug 'preservim/tagbar'
+	Plug 'tpope/vim-commentary'
 call plug#end()

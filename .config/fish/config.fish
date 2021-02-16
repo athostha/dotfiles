@@ -8,13 +8,14 @@ set fish_path $HOME/.oh-my-fish
 set -x LSCOLORS Exfxcxdxbxegedabagacad
 
 
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/home/across/.dev/anaconda3/bin:$PATH"
 export PATH="/home/across/.local/bin:$PATH"
 export PATH="/snap/bin:$PATH"
 alias ll='ls -la --color=auto'
 alias rh='python3 /mnt/sdb1/rhapsodic/rhapsodic.py'
 alias sc='sc-im'
-alias now='okular /home/across/Documentos/agora/vim.pdf & vim ~/Documentos/vim'
+alias now='zathura /home/across/Documentos/agora/vim.pdf & vim ~/Documentos/vim'
 alias ranger='/opt/ranger/ranger.py'
 
 function fish_prompt
@@ -91,3 +92,5 @@ set -g __fish_git_prompt_color_branch      $rgb_cyan
 set -g __fish_git_prompt_color_dirtystate  $rgb_base3
 set -g __fish_git_prompt_color_stagedstate $rgb_green
 set -g __fish_git_prompt_color_upstream    $rgb_cyan
+
+

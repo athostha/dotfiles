@@ -29,7 +29,6 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let python_highlight_all=1
 syntax on
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 set clipboard=unnamedplus
 
 
@@ -68,21 +67,14 @@ nnoremap <tab>0 0gt
 nnoremap <tab>h :tabprevious<CR>
 nnoremap <tab>l   :tabnext<CR>
 nnoremap <tab>n     :tabnew<CR>
+nnoremap <C-c>     gcc<CR>
 
-
-"NERDTree
-nnoremap <C-n> :NERDTree<CR>
-let NERDTreeMapOpenInTab='<ENTER>'
 
 
 "shortcuts
 nnoremap <F2> :w<CR>
-nnoremap <C-c> :s!^!#!<CR>
-vnoremap <silent> # :s/^/#/<cr>:noh<cr>
-vnoremap <silent> -# :s/^#//<cr>:noh<cr>
 
 
-"au BufNewFile,BufRead *.end
 
 let g:no_highlight_group_for_current_word=["Statement", "Comment", "Type", "PreProc"]
 function s:HighlightWordUnderCursor()
@@ -97,16 +89,5 @@ endfunction
 
 autocmd CursorMoved * call s:HighlightWordUnderCursor()
 
-inoremap { {}<ESC>ha
-inoremap ( ()<ESC>ha
-inoremap ' ''<ESC>ha
-inoremap [ []<ESC>ha
-
-set nocompatible
-filetype plugin on       " may already be in your .vimrc
-
-augroup pencil
-  autocmd!
-  autocmd FileType fim         call pencil#init()
-augroup END
-
+let g:rainbow_active = 1
+nmap <F8> :TagbarToggle<CR>
