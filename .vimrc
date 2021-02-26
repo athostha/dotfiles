@@ -1,4 +1,7 @@
+set autoindent
 set linebreak
+set backup
+set writebackup
 set is
 set hls
 set number
@@ -6,7 +9,7 @@ set nocompatible
 set splitbelow
 set splitright
 
-
+" test
 filetype plugin indent on
 filetype off
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
@@ -91,3 +94,124 @@ autocmd CursorMoved * call s:HighlightWordUnderCursor()
 
 let g:rainbow_active = 1
 nmap <F8> :TagbarToggle<CR>
+nmap dç :call Deleteblock()<CR>
+nmap yç :call Yankblock()<CR>
+nmap cç :call Substituteblock()<CR>
+
+
+
+
+function Selectblock()
+	let number = line('.')
+	let line = getline('.')
+	if line[-1:]==":"
+		let number = number + 1
+	endif
+	let pi = indent(number)
+	let gnumber = number
+	let snumber = number
+	let coun = 1
+	while 1
+		let th = number+coun
+		if indent(th)>=pi
+			let gnumber = th
+		else
+			break
+		endif
+		let coun = coun + 1
+	endwhile
+	let coun = 1
+	while 1
+		let th = number-coun
+		if indent(th)>=pi
+			let snumber = th
+		else
+			let snumber = th
+			break
+		endif
+		let coun = coun + 1
+	endwhile
+	return [snumber, gnumber]
+endfunction
+function Deleteblock()
+	let numlist = Selectblock()
+	let a = numlist[0]
+	let b = numlist[1]
+	exec a.",".b."d"
+endfunction
+function Yankblock()
+	let numlist = Selectblock()
+	let a = numlist[0]
+	let b = numlist[1]
+	exec a.",".b."y"
+endfunction
+function Substituteblock()
+	let numlist = Selectblock()
+	let a = numlist[0]
+	let b = numlist[1]
+	exec a.",".b."c"
+endfunction
+
+
+function Runontmux()
+	write
+	!~/.vim/myplug/tmuxscreens %
+endfunction
+function Cleantmux()
+	!tmux send -t 2 "clear" Enter
+endfunction
+
+nmap çl :call Cleantmux()<CR>
+nmap çç :call Runontmux()<CR>
+
+ab 1pd !trans -b pt:de
+ab 1dp !trans -b de:pt 
+ab 1ed !trans -b en:de
+ab 1de !trans -b de:en
+ab 1pe !trans -b pt:en
+ab 1ep !trans -b en:pt
+
+ab 2pd r !trans -b pt:de
+ab 2dp r !trans -b de:pt 
+ab 2ed r !trans -b en:de
+ab 2de r !trans -b de:en
+ab 2pe r !trans -b pt:en
+ab 2ep r !trans -b en:pt
+
+
+" filetype plugin on
+" let g:pydiction_location = '/home/across/.vim/plugged/pydiction/complete-dict'
+" let g:pydiction_menu_height = 3
+au BufNewFile,BufRead *.py set dictionary+=/home/across/.vim/pydiction/complete-dict
+" TODO: Inserir descrições nos autocompletes do dicionário
+
+
+au BufRead, BufNewFile *.fim set filetype=fim
+
+
+
+
+nmap çk :Pycheck<CR>
+nmap çn :cnext<CR>
+nmap çp :cprevious<CR>
+command! Pycheck call DoMake('pyflakes', 'pycodestyle')
+function! DoMake(...)
+  update  " save any changes because makeprg checks the file on disk
+  let savemp = &makeprg
+  let qflist = []
+  for prg in a:000
+    let &makeprg = prg . ' %'
+    silent make!
+    let qflist += getqflist()
+  endfor
+  if empty(qflist)
+    cclose
+  else
+    call setqflist(qflist)
+    copen
+    cfirst
+  endif
+  let &makeprg = savemp
+endfunction
+
+colorscheme darcula

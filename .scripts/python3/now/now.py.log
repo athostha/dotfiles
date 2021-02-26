@@ -1,0 +1,338 @@
+Traceback (most recent call last):
+  File "now.py", line 11, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    print(line[0])
+NameError: name 'line' is not defined
+  File "now.py", line 8
+    print(READ_OBJ[0]) reader() 
+                            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "now.py", line 9, in <module>
+    reader() 
+  File "now.py", line 8, in reader
+    print(READ_OBJ[0]) 
+NameError: name 'READ_OBJ' is not defined
+Traceback (most recent call last):
+  File "now.py", line 9, in <module>
+    reader() 
+  File "now.py", line 8, in reader
+    print(read_obj[0]) 
+TypeError: '_io.TextIOWrapper' object is not subscriptable
+<_io.TextIOWrapper name='/home/across/.scripts/python3/now/now.t' mode='r' encoding='UTF-8'>
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+cesar.pdf
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader() 
+  File "now.py", line 11, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/across/.scripts/python3/now/livros/All New Electronics Self-Teaching Guide 3 Ed..pdf\n.fim'
+Traceback (most recent call last):
+  File "now.py", line 43, in <module>
+    addlist(args[1])
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "now.py", line 15, in <module>
+    reader()
+  File "now.py", line 11, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/across/.scripts/python3/now/livros/All New Electronics Self-Teaching Guide 3 Ed..pdf\n.fim'
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader()
+  File "now.py", line 11, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/across/.scripts/python3/now/livros/All New Electronics Self-Teaching Guide 3 Ed..pd.fim'
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    last_line = f_read.readlines()[-1]
+NameError: name 'f_read' is not defined
+sadsadsadasd
+
+sadsadsadasd
+
+popopopo
+
+  File "now.py", line 12
+    if "--FIM--" in last_line
+                            ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader()
+  File "now.py", line 7, in reader
+    with open('/home/across/.scripts/python3/now/now.t', 'wr') as read_obj:
+ValueError: must have exactly one of create/read/write/append mode
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    line = read_obj.readlines()[0]
+io.UnsupportedOperation: not readable
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    line = read_obj.readlines()[0]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    line = read_obj.readlines()[0]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "now.py", line 14, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    line = read_obj.readlines()[1]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "now.py", line 16, in <module>
+    reader()
+  File "now.py", line 11, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+UnboundLocalError: local variable 'livro' referenced before assignment
+Traceback (most recent call last):
+  File "now.py", line 16, in <module>
+    reader()
+  File "now.py", line 11, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+UnboundLocalError: local variable 'livro' referenced before assignment
+Traceback (most recent call last):
+  File "now.py", line 17, in <module>
+    reader()
+  File "now.py", line 11, in reader
+    print(livro)
+UnboundLocalError: local variable 'livro' referenced before assignment
+Traceback (most recent call last):
+  File "now.py", line 17, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+UnboundLocalError: local variable 'livro' referenced before assignment
+<_io.TextIOWrapper name='/home/across/.scripts/python3/now/now.t' mode='r' encoding='UTF-8'>
+<_io.TextIOWrapper name='/home/across/.scripts/python3/now/now.t' mode='r' encoding='UTF-8'>
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+<_io.TextIOWrapper name='/home/across/.scripts/python3/now/now.t' mode='r' encoding='UTF-8'>
+sadsadsadasd
+
+<_io.TextIOWrapper name='/home/across/.scripts/python3/now/now.t' mode='r' encoding='UTF-8'>
+sadsadsadasd
+
+<_io.TextIOWrapper name='/home/across/.scripts/python3/now/now.t' mode='r' encoding='UTF-8'>
+sadsadsadasd
+
+<_io.TextIOWrapper name='/home/across/.scripts/python3/now/now.t' mode='r' encoding='UTF-8'>
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+sadsadsadasd
+
+cesar.pdf
+okokokoko
+--FIM--
+
+cesar.pdf
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 16, in reader
+    read_obj.writelines(data[1:])
+NameError: name 'data' is not defined
+Traceback (most recent call last):
+  File "now.py", line 20, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    data = fin.read().splitlines(True)
+NameError: name 'fin' is not defined
+Traceback (most recent call last):
+  File "now.py", line 20, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    print(livro)
+UnboundLocalError: local variable 'livro' referenced before assignment
+Traceback (most recent call last):
+  File "now.py", line 20, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    print(livro)
+UnboundLocalError: local variable 'livro' referenced before assignment
+Traceback (most recent call last):
+  File "now.py", line 18, in <module>
+    reader()
+  File "now.py", line 9, in reader
+    livr = data[0]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "now.py", line 18, in <module>
+    reader()
+  File "now.py", line 10, in reader
+    print(livro)
+NameError: name 'livro' is not defined
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+Traceback (most recent call last):
+  File "now.py", line 18, in <module>
+    reader()
+  File "now.py", line 11, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/across/.scripts/python3/now/livros/All New Electronics Self-Teaching Guide 3 Ed..pdf\n.fim'
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/across/.scripts/python3/now/livros/All New Electronics Self-Teaching Guide 3 Ed..pdf\n.fim'
+Traceback (most recent call last):
+  File "now.py", line 18, in <module>
+    reader()
+  File "now.py", line 9, in reader
+    livro = data[:data.find('\n')]
+AttributeError: 'list' object has no attribute 'find'
+Traceback (most recent call last):
+  File "now.py", line 18, in <module>
+    reader()
+  File "now.py", line 9, in reader
+    livro = data[:data.find('\n')]
+AttributeError: 'list' object has no attribute 'find'
+['cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n']
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n']
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+[]
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+data All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+data All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+data A
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+cesar.pdf
+Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf
+Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf
+
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/across/.scripts/python3/now/livros/All New Electronics Self-Teaching Guide 3 Ed..pdf\ncesar.pdf\nCalculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\nAstronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n.fim'
+data All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+['All New Electronics Self-Teaching Guide 3 Ed..pdf\n', 'cesar.pdf\n', 'Calculus - A Complete Course (9th Edition) By Robert A. Adams.pdf\n', 'Astronomy_-_A_Self_Teaching_Guide_Dinah.pdf\n']
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+TypeError: can only concatenate str (not "list") to str
+data All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 12, in reader
+    with open('/home/across/.scripts/python3/now/livros/'+livro+'.fim', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/across/.scripts/python3/now/livros/All New Electronics Self-Teaching Guide 3 Ed..pdf\n.fim'
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    print('data', data[0])
+NameError: name 'data' is not defined
+Traceback (most recent call last):
+  File "now.py", line 19, in <module>
+    reader()
+  File "now.py", line 8, in reader
+    print('data', data[0])
+NameError: name 'data' is not defined
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+sadsadsadasd
+
+cesar.pdf
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+sadsadsadasd
+
+--FIM--
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+sadsadsadasd
+
+All New Electronics Self-Teaching Guide 3 Ed..pdf
+
+Vim: Aviso: Saída não é um terminal
+[?1049h[?1h=[1;33r[23m[24m[0m[38;5;145m[48;5;235m[?25l[33;1H<-Teaching Guide 3 Ed..pdf.fim"                    [33;2Hng Guide 3 Ed..pdf.fim" 3L, 42C[1;1H[38;5;241m[48;5;236m1 [0m[38;5;145m[48;5;235m[48;5;22msadsadsadsad[0m[38;5;145m[48;5;235m                                     [2;1H[38;5;241m[48;5;236m2 [0m[38;5;145m[48;5;235msadsadasdsadsad                                  [3;1H[38;5;241m[48;5;236m3 [0m[38;5;145m[48;5;235msadsadsadasd                                     [4;1H[38;5;241m~                                                  [5;1H~                                                  [6;1H~                                                  [7;1H~                                                  [8;1H~                                                  [9;1H~                                                  [10;1H~                                                  [11;1H~                                                  [12;1H~                                                  [13;1H~                                                  [14;1H~                                                  [15;1H~                                                  [16;1H~                                                  [17;1H~                                                  [18;1H~                                                  [19;1H~                                                  [20;1H~                                                  [21;1H~                                                  [22;1H~                                                  [23;1H~                                                  [24;1H~                                                  [25;1H~                                                  [26;1H~                                                  [27;1H~                                                  [28;1H~                                                  [29;1H~                                                  [30;1H~                                                  [31;1H~                                                  [32;1H~                                                  [0m[38;5;145m[48;5;235m[33;1H                                 1,1[10CTudo[1;3H[34h[?25h[?25l[33;34H   [10C    :[34h[?25hq[?25l[34h[?25h[?25l[33;1H[K[33;1H[?1l>[34h[?25h[?1049lAll New Electronics Self-Teaching Guide 3 Ed..pdf
+
+Vim: Aviso: Saída não é um terminal
+[?1049h[?1h=[1;33r[23m[24m[0m[38;5;145m[48;5;235m[?25l[33;1H<-Teaching Guide 3 Ed..pdf.fim"                    [33;2Hng Guide 3 Ed..pdf.fim" 3L, 42C[1;1H[38;5;241m[48;5;236m1 [0m[38;5;145m[48;5;235m[48;5;22msadsadsadsad[0m[38;5;145m[48;5;235m                                     [2;1H[38;5;241m[48;5;236m2 [0m[38;5;145m[48;5;235msadsadasdsadsad                                  [3;1H[38;5;241m[48;5;236m3 [0m[38;5;145m[48;5;235msadsadsadasd                                     [4;1H[38;5;241m~                                                  [5;1H~                                                  [6;1H~                                                  [7;1H~                                                  [8;1H~                                                  [9;1H~                                                  [10;1H~                                                  [11;1H~                                                  [12;1H~                                                  [13;1H~                                                  [14;1H~                                                  [15;1H~                                                  [16;1H~                                                  [17;1H~                                                  [18;1H~                                                  [19;1H~                                                  [20;1H~                                                  [21;1H~                                                  [22;1H~                                                  [23;1H~                                                  [24;1H~                                                  [25;1H~                                                  [26;1H~                                                  [27;1H~                                                  [28;1H~                                                  [29;1H~                                                  [30;1H~                                                  [31;1H~                                                  [32;1H~                                                  [0m[38;5;145m[48;5;235m[33;1H                                 1,1[10CTudo[1;3H[34h[?25h[23m[24m[0m[38;5;145m[48;5;235m[?25l[1;1H[38;5;241m[48;5;236m1 [0m[38;5;145m[48;5;235m[48;5;22msadsadsadsad[0m[38;5;145m[48;5;235m                                                                                                                         [2;1H[38;5;241m[48;5;236m2 [0m[38;5;145m[48;5;235msadsadasdsadsad                                                                                                                      [3;1H[38;5;241m[48;5;236m3 [0m[38;5;145m[48;5;235msadsadsadasd                                                                                                                         [4;1H[38;5;241m~                                                                                                                                      [5;1H~                                                                                                                                      [6;1H~                                                                                                                                      [7;1H~                                                                                                                                      [8;1H~                                                                                                                                      [9;1H~                                                                                                                                      [10;1H~                                                                                                                                      [11;1H~                                                                                                                                      [12;1H~                                                                                                                                      [13;1H~                                                                                                                                      [14;1H~                                                                                                                                      [15;1H~                                                                                                                                      [16;1H~                                                                                                                                      [17;1H~                                                                                                                                      [18;1H~                                                                                                                                      [19;1H~                                                                                                                                      [20;1H~                                                                                                                                      [21;1H~                                                                                                                                      [22;1H~                                                                                                                                      [23;1H~                                                                                                                                      [24;1H~                                                                                                                                      [25;1H~                                                                                                                                      [26;1H~                                                                                                                                      [27;1H~                                                                                                                                      [28;1H~                                                                                                                                      [29;1H~                                                                                                                                      [30;1H~                                                                                                                                      [31;1H~                                                                                                                                      [32;1H~                                                                                                                                      [0m[38;5;145m[48;5;235m[33;1H                                                                                                                                       [33;118H1,1[10CTudo[1;3H[34h[?25h
