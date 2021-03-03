@@ -1,0 +1,4 @@
+#!/bin/bash
+
+name=${2##*/}
+tmux new-window -n $name $1 -- $2

@@ -1,0 +1,36 @@
+2021-03-02 23:04:01.867 (0x7ffe8f6ca3a0) Debug: New PolkitAgentListener  0x5620ad930c80
+2021-03-02 23:04:01.868 (0x7ffe8f6ca3a0) Debug: Adding new listener  PolkitQt1::Agent::Listener(0x7ffe8f6ca3b0) for  0x5620ad930c80
+2021-03-02 23:04:02.354 (0x7fff56c3e8f0) Debug: systemd: "CanHibernate" = "yes"
+2021-03-02 23:04:02.393 (0x7fff56c3e8f0) Debug: systemd: "CanSuspend" = "yes"
+2021-03-02 23:04:02.409 (0x7fff7a2d5d20) Debug: systemd: "CanReboot" = "yes"
+2021-03-02 23:04:02.420 (0x7fff7a2d5d20) Debug: systemd: "CanPowerOff" = "yes"
+2021-03-02 23:04:02.426 (0x7fffdf1f8570) Debug: ()
+2021-03-02 23:04:03.215 (0x7fffdf1f8570) Debug: WinIdChange 1000008 handle QWidgetWindow(0x55c7b4640240, name="LXQtPanel panel1Window") QScreen(0x55c7b43d6780, name="VGA-1")
+2021-03-02 23:04:03.267 (0x7fffdf1f8570) Debug: Systray started
+2021-03-02 23:04:05.700 (0x7ffeff344a50) Warning: Empty filename passed to function
+2021-03-02 23:04:05.744 (0x7fffcda8f630) Debug: BatteryChanged discharging: true chargeLevel: nan actionTime: QTime(Invalid)
+2021-03-02 23:04:05.756 (0x7fffcda8f630) Debug: Inhibit got: 26
+2021-03-02 23:04:05.862 (0x7fffcda8f630) Debug: Starting idlenesswatcher
+2021-03-02 23:04:12.098 (0x7fffca0fadd0) Debug: Connecting to KScreen...
+2021-03-02 23:04:18.795 (0x7fffdf1f8570) Debug: execAction "/usr/share/applications/qterminal.desktop"
+2021-03-02 23:07:49.598 (0x7fff7a2d5d20) Debug: systemd: "CanPowerOff" = "yes"
+2021-03-02 23:07:49.608 (0x7ffe52c077d0) Debug: systemd: "CanSuspend" = "yes"
+2021-03-02 23:07:49.613 (0x7fff7a2d5d20) Debug: systemd: "CanReboot" = "yes"
+2021-03-02 23:07:49.621 (0x7ffe52c077d0) Debug: systemd: "CanHibernate" = "yes"
+2021-03-02 23:08:03.864 (0x7fff234ee7e0) Debug: New PolkitAgentListener  0x562af74d5c80
+2021-03-02 23:08:03.864 (0x7fff234ee7e0) Debug: Adding new listener  PolkitQt1::Agent::Listener(0x7fff234ee7f0) for  0x562af74d5c80
+2021-03-02 23:08:04.076 (0x7ffe9f47dc60) Debug: ()
+2021-03-02 23:08:04.129 (0x7ffd894dd440) Debug: systemd: "CanHibernate" = "yes"
+2021-03-02 23:08:04.144 (0x7ffd894dd440) Debug: systemd: "CanSuspend" = "yes"
+2021-03-02 23:08:04.151 (0x7ffe8b3d0100) Debug: systemd: "CanReboot" = "yes"
+2021-03-02 23:08:04.157 (0x7ffe8b3d0100) Debug: systemd: "CanPowerOff" = "yes"
+2021-03-02 23:08:04.310 (0x7ffe9f47dc60) Debug: WinIdChange 1400008 handle QWidgetWindow(0x56330bb1d210, name="LXQtPanel panel1Window") QScreen(0x56330b7a7b80, name="VGA-1")
+2021-03-02 23:08:04.372 (0x7ffe9f47dc60) Debug: Systray started
+2021-03-02 23:08:04.538 (0x7ffe99afac10) Debug: Starting idlenesswatcher
+2021-03-02 23:08:19.265 (0x7ffe9f47dc60) Debug: execAction "/usr/share/applications/pcmanfm-qt.desktop"
+2021-03-02 23:08:27.057 (0x7ffe9f47dc60) Debug: execAction "/usr/share/applications/featherpad.desktop"
+2021-03-02 23:13:43.351 (0x7ffe9f47dc60) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 3809, resource id: 37748739, major code: 18 (ChangeProperty), minor code: 0
+2021-03-02 23:13:43.365 (0x7ffe9f47dc60) Warning: QXcbConnection: XCB error: 3 (BadWindow), sequence: 3812, resource id: 37748739, major code: 18 (ChangeProperty), minor code: 0
+2021-03-02 23:13:49.815 (0x7ffe8b3d0100) Debug: systemd: "CanReboot" = "yes"
+2021-03-02 23:13:49.830 (0x7ffe9f47dc60) Debug: Service "org.freedesktop.StatusNotifierItem-1265-1" unregistered
+2021-03-02 23:13:49.985 (0x7ffe8b3d0100) Debug: systemd: "CanReboot" = "yes"
