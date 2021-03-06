@@ -8,7 +8,6 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -30,10 +29,10 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec i3-sensible-terminal -e ~/.scripts/bash/tmuxstart epona
-# bindsym $mod+Shift+Return exec i3-sensible-terminal -e ~/.scripts/bash/tmuxstart lutador
-bindsym $mod+Return exec /snap/bin/cool-retro-term -e ~/.scripts/bash/tmuxstart epona
-bindsym $mod+Shift+Return exec /snap/bin/cool-retro-term -e ~/.scripts/bash/tmuxstart lutador
+
+exec --no-startup-id i3-msg 'workspace 2; exec Cool-Retro-Term-1.1.1-x86_64.AppImage --fullscreen -e ~/.scripts/bash/tmuxstart danger';
+bindsym $mod+Return exec Cool-Retro-Term-1.1.1-x86_64.AppImage -e ~/.scripts/bash/tmuxstart epona
+bindsym $mod+Shift+Return exec Cool-Retro-Term-1.1.1-x86_64.AppImage -e ~/.scripts/bash/tmuxstart lutador
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -175,7 +174,6 @@ bar {
 #chooses desktop wallpaper, i3lock will be bound to same image
 exec_always ~/.scripts/bash/screen
 
-exec --no-startup-id i3-msg 'workspace 2; exec /snap/bin/cool-retro-term --fullscreen -e ~/.scripts/bash/tmuxstart danger';
 
 exec_always compton
 bindsym $mod+shift+p exec pavucontrol-qt

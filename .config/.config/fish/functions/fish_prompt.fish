@@ -1,1 +1,0 @@
-/home/across/.local/share/omf/themes/mars/fish_prompt.fish

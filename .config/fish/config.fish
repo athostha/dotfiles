@@ -1,23 +1,22 @@
 #vi style keybindings
 fish_vi_key_bindings
+
 # Path to your oh-my-fish.
 set fish_path $HOME/.oh-my-fish
 
 # Make the blue color for directories more readable
-set -x LSCOLORS Exfxcxdxbxegedabagacad
+# set -x LSCOLORS Exfxcxdxbxegedabagacad
 
-
+export PATH="/home/across/.local/cool-retro-term:$PATH"
+export TERMINAL='cool-retro-term'
+alias ranger="python3 /opt/ranger/ranger.py"
 export PATH="$HOME/.vim/myplug:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="/home/across/.dev/anaconda3/bin:$PATH"
 export PATH="/home/across/.local/bin:$PATH"
-export PATH="/snap/bin:$PATH"
 alias ll='ls -la --color=auto'
 alias rh='python3 /mnt/sdb1/rhapsodic/rhapsodic.py'
 alias sc='sc-im'
 alias now='python3 ~/.scripts/python3/now/now.py'
 alias nog='okular "Documentos/Kaufmann, Walter (ed.) - Twenty-Five German Poets (Norton, 1975).pdf" & vim ~/Documentos/alemao'
-alias ranger='/opt/ranger/ranger.py'
 
 function fish_prompt
   set_color blue
@@ -43,24 +42,24 @@ set -l purple bd93f9
 set -l cyan 8be9fd
 set -l pink ff79c6
 
-# Syntax Highlighting Colors
-set -g fish_color_normal $foreground
-set -g fish_color_command $cyan
-set -g fish_color_quote $yellow
-set -g fish_color_redirection $foreground
-set -g fish_color_end $orange
-set -g fish_color_error $red
-set -g fish_color_param $purple
-set -g fish_color_comment $comment
-set -g fish_color_match --background=$selection
-set -g fish_color_selection --background=$selection
-set -g fish_color_search_match --background=$selection
-set -g fish_color_operator $green
-set -g fish_color_escape $pink
-set -g fish_color_autosuggestion $comment
+# # Syntax Highlighting Colors
+# set -g fish_color_normal $foreground
+# set -g fish_color_command $cyan
+# set -g fish_color_quote $yellow
+# set -g fish_color_redirection $foreground
+# set -g fish_color_end $orange
+# set -g fish_color_error $red
+# set -g fish_color_param $purple
+# set -g fish_color_comment $comment
+# set -g fish_color_match --background=$selection
+# set -g fish_color_selection --background=$selection
+# set -g fish_color_search_match --background=$selection
+# set -g fish_color_operator $green
+# set -g fish_color_escape $pink
+# set -g fish_color_autosuggestion $comment
 
-# Completion Pager Colors
-set -g fish_pager_color_progress $comment
-set -g fish_pager_color_prefix $cyan
-set -g fish_pager_color_completion $foreground
-set -g fish_pager_color_description $comment
+# # # Completion Pager Colors
+# set -g fish_pager_color_progress $comment
+# set -g fish_pager_color_prefix $cyan
+# set -g fish_pager_color_completion $foreground
+# set -g fish_pager_color_description $comment

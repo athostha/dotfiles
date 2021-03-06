@@ -1,9 +1,9 @@
 set autoindent
 set linebreak
-set backup
-set writebackup
+" set backup
+" set writebackup
 set is
-set hls
+" set hls
 set number
 set nocompatible
 set splitbelow
@@ -17,7 +17,6 @@ filetype off
 set numberwidth=2
 set encoding=utf-8
 
-
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -30,7 +29,7 @@ endif
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-let python_highlight_all=1
+" let python_highlight_all=2
 syntax on
 set clipboard=unnamedplus
 
@@ -79,18 +78,6 @@ nnoremap <F2> :w<CR>
 
 
 
-let g:no_highlight_group_for_current_word=["Statement", "Comment", "Type", "PreProc"]
-function s:HighlightWordUnderCursor()
-    let l:syntaxgroup = synIDattr(synIDtrans(synID(line("."), stridx(getline("."), expand('<cword>')) + 1, 1)), "name")
-
-    if (index(g:no_highlight_group_for_current_word, l:syntaxgroup) == -1)
-        exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
-    else
-        exe 'match IncSearch /\V\<\>/'
-    endif
-endfunction
-
-autocmd CursorMoved * call s:HighlightWordUnderCursor()
 
 let g:rainbow_active = 1
 nmap <F8> :TagbarToggle<CR>
@@ -183,7 +170,6 @@ ab 2ep r !trans -b en:pt
 " let g:pydiction_location = '/home/across/.vim/plugged/pydiction/complete-dict'
 " let g:pydiction_menu_height = 3
 au BufNewFile,BufRead *.py set dictionary+=/home/across/.vim/pydiction/complete-dict
-" TODO: Inserir descrições nos autocompletes do dicionário
 
 
 au BufRead, BufNewFile *.fim set filetype=fim
@@ -214,4 +200,11 @@ function! DoMake(...)
   let &makeprg = savemp
 endfunction
 
-colorscheme darcula
+colorscheme znake
+
+augroup illuminate_augroup
+    autocmd!
+    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
+augroup END
+let g:Illuminate_delay = 1
+" let g:Illuminate_highlightUnderCursor = 0

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-convert /home/across/Imagens/wallpaper/motoko11.png -resize x768 /tmp/tscreen.png & pid=$!
+convert /home/across/Imagens/wallpaper/motoko18.png -resize x768 /tmp/tscreen.png & pid=$!
 wait $pid
 convert /tmp/tscreen.png -gravity center -extent 1366x768 /tmp/screen.png & pid=$!
 wait $pid

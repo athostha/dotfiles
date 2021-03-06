@@ -3,5 +3,5 @@ call plug#begin('~/.vim/plugged')
 	Plug 'preservim/tagbar'
 	Plug 'tpope/vim-commentary'
         Plug 'vim-python/python-syntax'
-	Plug 'doums/darcula'
+	Plug 'RRethy/vim-illuminate'
 call plug#end()
