@@ -10,10 +10,10 @@ set splitbelow
 set splitright
 
 " test
-filetype plugin indent on
+" filetype plugin indent on
 filetype off
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
-"set laststatus=2
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ [%{wordcount().words}\ words]\ %{strftime('%c')}
+set laststatus=2
 set numberwidth=2
 set encoding=utf-8
 
@@ -144,13 +144,24 @@ function Runontmux()
 	write
 	!~/.vim/myplug/tmuxscreens %
 endfunction
+function Runtmuxclean()
+	write
+	!~/.vim/myplug/tmuxscreens2 %
+endfunction
 function Cleantmux()
 	!tmux send -t 2 "clear" Enter
 endfunction
+function Stoptmux()
+	!tmux send-keys -t 2 'C-c'
+endfunction
 
-nmap çl :call Cleantmux()<CR>
-nmap çç :call Runontmux()<CR>
+" Manages tmux as a debugging tool
+nmap çc :call Runtmuxclean()<CR> 
+nmap çç :call Runontmux()<CR> 
+nmap çl :call Cleantmux()<CR> 
+nmap çs :call Stoptmux()<CR>
 
+"passes word through google tranlator
 ab 1pd !trans -b pt:de
 ab 1dp !trans -b de:pt 
 ab 1ed !trans -b en:de
@@ -172,11 +183,10 @@ ab 2ep r !trans -b en:pt
 au BufNewFile,BufRead *.py set dictionary+=/home/across/.vim/pydiction/complete-dict
 
 
-au BufRead, BufNewFile *.fim set filetype=fim
 
 
 
-
+" enables pycheck. Checks erros on the python syntaxis
 nmap çk :Pycheck<CR>
 nmap çn :cnext<CR>
 nmap çp :cprevious<CR>
@@ -198,9 +208,12 @@ function! DoMake(...)
     cfirst
   endif
   let &makeprg = savemp
+  redraw!
 endfunction
 
-colorscheme znake
+" colorscheme crt
+colorscheme neon
+
 
 augroup illuminate_augroup
     autocmd!
@@ -208,3 +221,17 @@ augroup illuminate_augroup
 augroup END
 let g:Illuminate_delay = 1
 " let g:Illuminate_highlightUnderCursor = 0
+
+" Renames tmux window after current buffer, than changes it back at closing time
+autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
+au VimLeave * silent call system("tmux setw automatic-rename")
+
+" Colors .fim files
+au BufRead,BufNewFile *.fim set filetype=fim
+highlight codesnipet ctermfg=yellow
+highlight chapter ctermbg=red ctermfg=black
+highlight subchapter ctermbg=black ctermfg=red
+highlight marked ctermbg=green ctermfg=black
+highlight basicLanguageKeywords ctermbg=black ctermfg=cyan
+highlight UPPER ctermbg=black ctermfg=red
+
