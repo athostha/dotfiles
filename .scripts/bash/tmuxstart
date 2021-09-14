@@ -19,8 +19,8 @@ if [[  $session_name = "lutador" ]]; then
   tmux set -a -t lutador status-style bg=black,fg=white
 fi
 if [[ $session_name = "danger" ]]; then
-  tmux set -t danger status-style bg=colour224
-  tmux set -a -t danger status-style fg=colour255
+  tmux set -t danger status-style bg=colour161
+  tmux set -a -t danger status-style fg=#ffffff
 fi
 if [[ $session_name = "blocked" ]]; then
   tmux set -t blocked status-style bg=black

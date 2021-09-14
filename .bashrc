@@ -112,7 +112,7 @@ fi
 #   fi
 # fi
 
-neofetch --source /home/across/.config/knight.txt --disable Theme Icons
+# neofetch --source /home/across/.config/knight.txt --disable Theme Icons
 # PS1='${debian_chroot:+($debian_chroot)}[\W]:'
 PS1="[\[\e[33m\]\W\[\e[m\]]: "
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \

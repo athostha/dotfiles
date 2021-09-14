@@ -30,9 +30,9 @@ floating_modifier $mod
 
 # start a terminal
 
-exec --no-startup-id i3-msg 'workspace 1; exec alacritty -e ~/.scripts/bash/tmuxstart danger';
-bindsym $mod+Return exec alacritty -e ~/.scripts/bash/tmuxstart epona
-bindsym $mod+Shift+Return exec alacritty -e ~/.scripts/bash/tmuxstart lutador
+exec --no-startup-id i3-msg 'workspace 1; exec "st -e ~/.scripts/bash/tmuxstart danger"';
+bindsym $mod+Return exec "st -e ~/.scripts/bash/tmuxstart epona"
+bindsym $mod+Shift+Return exec "st -e ~/.scripts/bash/tmuxstart lutador"
 bindsym $mod+o exec ~/.scripts/bash/blockscreen
 
 # Open file manager
@@ -183,7 +183,9 @@ bar {
 }
 
 #chooses desktop wallpaper, i3lock will be bound to same image
-exec_always ~/.scripts/bash/screen
+# exec_always ~/.scripts/bash/screen
+# feh --bg-fill /home/across/Imagens/wallpaper/motoko.png
+exec_always feh --bg-fill /home/across/Imagens/wallpaper/motoko.png
 
 exec_always compton
 bindsym $mod+shift+p exec pavucontrol-qt
