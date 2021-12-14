@@ -4,7 +4,6 @@ export PATH="/home/across/.scripts/bash:$PATH"
 export PATH="/home/across/.config/rofi/bin:$PATH"
 # export PATH="/home/across/.cargo/bin:$PATH"
 export PATH="/home/across/.local/cool-retro-term/:$PATH"
-alias ranger="python3 /opt/ranger/ranger.py"
 export PATH="$HOME/.vim/myplug:$PATH"
 export PATH="/home/across/.local/bin:$PATH"
 alias rh='python3 ~/sdc1/rhapsodic/rhapsodic.py'
