@@ -2,6 +2,10 @@ function Runontmux()
 	write
 	!~/.vim/myplug/tmuxscreens %
 endfunction
+function Runontmuxv()
+	write
+	!~/.vim/myplug/tmuxscreensV %
+endfunction
 function Runtmuxclean()
 	write
 	!~/.vim/myplug/tmuxscreens2 %

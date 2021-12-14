@@ -1,6 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/across/Documentos/programming/st'
-let g:netrw_dirhist_2='/home/across/.vimconf'
-let g:netrw_dirhist_3='/home/across/.vim/colors'
-let g:netrw_dirhist_4='/home/across/Documentos'
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/across/.vimconf'
+let g:netrw_dirhist_5='/home/across/.local/bin'
+let g:netrw_dirhist_4='/home/across/tmp'
+let g:netrw_dirhist_3='/home/across/.local/bin'
+let g:netrw_dirhist_2='/home/across/.config/qutebrowser'
+let g:netrw_dirhist_1='/home/across/.local/bin'
+let g:netrw_dirhist_0='/home/across/.vimconf'
+let g:netrw_dirhist_9='/home/across/.newsboat'
+let g:netrw_dirhist_8='/home/across/.newsboat/scripts/betterfolha'
+let g:netrw_dirhist_7='/home/across/.newsboat/scripts'
